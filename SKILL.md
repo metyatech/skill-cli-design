@@ -20,10 +20,12 @@ description: Use when designing, building, or reviewing a command-line interface
 - For modifying/deleting actions, provide --dry-run and an explicit bypass (--yes/--force).
 - Provide controllable logging (--quiet, --verbose, or --trace).
 - Use deterministic exit codes (0 success, non-zero failure) and avoid silent fallbacks.
+- Implement strictly non-interactive modes for CI/CD environments.
 
 ## Configuration
 
 - For JSON configuration, define/update a JSON Schema and validate config on load.
+- Support configuration via environment variables for sensitive or environment-specific data.
 
 ## Interactive prompts
 
