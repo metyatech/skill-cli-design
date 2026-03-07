@@ -18,12 +18,12 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install -g markdownlint-cli compose-agentsmd
+        run: npm ci
 
-      - name: Run markdownlint
-        run: markdownlint **/*.md --ignore node_modules --ignore AGENTS.md
+      - name: Run verification
+        run: npm run verify
 
       - name: Verify AGENTS.md is up to date
         run: |
-          compose-agentsmd --compose
+          npm run prepare
           git diff --exit-code AGENTS.md
