@@ -33,16 +33,20 @@ $cli-design
 
 ## Development
 
-### Verification
-
-Run the following commands to verify the project:
+### Setup
 
 ```sh
-# Install markdownlint
-npm install -g markdownlint-cli
+git clone https://github.com/metyatech/skill-cli-design.git
+cd skill-cli-design
+npm install
+```
 
-# Run linting
-markdownlint **/*.md --ignore node_modules --ignore AGENTS.md
+### Verification
+
+Run the following command to verify the project:
+
+```sh
+npm run verify
 ```
 
 ### Rule Composition
@@ -50,10 +54,15 @@ markdownlint **/*.md --ignore node_modules --ignore AGENTS.md
 This project uses `compose-agentsmd` to manage `AGENTS.md`. To update rules:
 
 ```sh
-# Generate AGENTS.md
-compose-agentsmd --compose
+npm run prepare
 ```
+
+## Community and Security
+
+- **[Security Policy](SECURITY.md)**: Report vulnerabilities securely.
+- **[Contributing](CONTRIBUTING.md)**: Help improve this skill.
+- **[Changelog](CHANGELOG.md)**: Track notable changes.
 
 ## License
 
-MIT
+[MIT](LICENSE)
