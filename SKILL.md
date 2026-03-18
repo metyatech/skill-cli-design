@@ -21,6 +21,12 @@ description: Use when designing, building, or reviewing a command-line interface
 - Provide controllable logging (--quiet, --verbose, or --trace).
 - Use deterministic exit codes (0 success, non-zero failure) and avoid silent fallbacks.
 - Implement strictly non-interactive modes for CI/CD environments.
+- Provide clear, actionable error messages with guidance on how to resolve the issue.
+
+## Security and technical integrity
+
+- Never log, print, or commit secrets, API keys, or sensitive credentials; rigorously protect configuration and environment files.
+- Include deterministic verification procedures (e.g., tests, reproduction scripts) to ensure behavioral correctness.
 
 ## Configuration
 
