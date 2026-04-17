@@ -20,6 +20,11 @@ description: Use when designing, building, or reviewing a command-line interface
 - A CLI emitting structured data MUST offer machine-readable
   output (e.g., `--json`).
 
+## Shell integration
+
+- Provide shell completion scripts for major shells (bash, zsh, fish, powershell); include a command to generate them (e.g., `cli completion zsh`).
+- Use consistent flag naming (prefer kebab-case for long flags).
+
 ## Safety and control
 
 - A CLI that modifies or deletes data MUST provide `--dry-run`
@@ -32,12 +37,23 @@ description: Use when designing, building, or reviewing a command-line interface
 - A CLI MUST implement strictly non-interactive modes for CI/CD
   environments.
 
+## Lifecycle and updates
+
+- Implement non-blocking update notifications to inform users of new versions.
+- Follow Semantic Versioning (SemVer) for version numbers.
+
 ## Configuration
 
 - A CLI that consumes JSON configuration MUST define and update a
   JSON Schema and MUST validate configuration on load.
 - A CLI MUST support configuration via environment variables for
   sensitive or environment-specific data.
+
+## User interface and feedback
+
+- Support colors (use standard environment variables like `NO_COLOR` to disable).
+- Detect TTY/interactive environments; use appropriate output (e.g., avoid spinners or complex bars in non-TTY).
+- Provide progress indicators (spinners, progress bars) for long-running tasks.
 
 ## Interactive prompts
 
