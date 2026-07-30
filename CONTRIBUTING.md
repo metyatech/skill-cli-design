@@ -18,3 +18,9 @@ cd skill-cli-design
 ## Scope
 
 This skill covers **CLI design conventions and checklists**. Please keep PRs scoped to CLI standards and tooling conventions.
+
+## Documentation and responses
+
+- Developer-facing documentation, code comments, and commit messages MUST be in English.
+- Rule modules (e.g., in `agent-ruleset.json` sources) MUST be in English.
+- User-facing responses in interactive sessions SHOULD be in the user's requested locale (default: Japanese for this project).

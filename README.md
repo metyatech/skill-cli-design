@@ -1,10 +1,10 @@
 # skill-cli-design
 
-Agent skill for designing and reviewing command-line interface (CLI) tools. Provides a standard conventions checklist covering help, versioning, I/O, safety, and configuration.
+Agent skill for designing and reviewing command-line interface (CLI) tools. Provides a standard conventions checklist covering help, versioning, I/O, shell integration, lifecycle, safety, and configuration.
 
 ## Overview
 
-This skill provides a comprehensive checklist for software engineers and AI agents to ensure that CLI tools follow industry-standard conventions. It focuses on usability, safety, and interoperability.
+This skill provides a comprehensive checklist for software engineers and AI agents to ensure that CLI tools follow industry-standard conventions. It focuses on usability, safety, interoperability, and modern user experience (UX) standards.
 
 ## Supported Environments
 
